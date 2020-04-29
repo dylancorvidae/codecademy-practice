@@ -1,0 +1,71 @@
+// Hues
+// Warm color gradient
+
+body {
+  background-color: #fdfdfd;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+}
+section {
+  width: 100%;
+  display: block;
+  height: 18vh;
+  padding: 1vh;
+  font-size: 22px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+}
+
+.first-color {
+  background-color: hsla(0, 100%, 50%, 1);
+}
+.second-color {
+  background-color: hsla(8, 100%, 50%, 1);
+}
+.third-color {
+  background-color: hsla(15, 100%, 50%, 1);
+}
+.fourth-color {
+  background-color: hsla(30, 100%, 50%, 1);
+}
+.fifth-color {
+  background-color: hsla(45, 100%, 50%, 1);
+}
+
+// Cool color gradient
+
+// .first-color {
+//   background-color: hsla(260, 100%, 50%, 1);
+// }
+// .second-color {
+//   background-color: hsla(240, 100%, 50%, 1);
+// }
+// .third-color {
+//   background-color: hsla(190, 100%, 50%, 1);
+// }
+// .fourth-color {
+//   background-color: hsla(170, 100%, 50%, 1);
+// }
+// .fifth-color {
+//   background-color: hsla(140, 100%, 50%, 1);
+// }
+
+
+//Lightness
+
+// .first-color {
+//   background-color: hsla(240, 100%, 30%, 1);
+// }
+// .second-color {
+//   background-color: hsla(240, 100%, 35%, 1);
+// }
+// .third-color {
+//   background-color: hsla(240, 100%, 45%, 1);
+// }
+// .fourth-color {
+//   background-color: hsla(240, 100%, 55%, 1);
+// }
+// .fifth-color {
+//   background-color: hsla(240, 100%, 65%, 1);
+// }
