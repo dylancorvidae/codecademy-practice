@@ -1,10 +1,18 @@
 /* Site Stylesheet
+  0. Colors
   1. Global Styles
   2. Typography Styles
   3. Structure Styles
   4. Module Styles
   5. Component Styles
+  6. Page Styles
 ======================================== */
+
+/* 0. Colors
+======================================== */
+color palette {
+
+}
 
 /* 1. Global Styles
 ======================================== */
@@ -203,7 +211,7 @@ small {
 
 /* Site Navigation */
 .site-header {
-  background-color: #EBEBEB;
+  background-color: #34474F;
   padding: 30px 15px 0;
 }
 
@@ -237,7 +245,7 @@ small {
 .site-nav-left li:not(:last-child),
 .site-nav-right li:not(:last-child),
 .site-nav-mobile li:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 45px;
 }
 
 .site-nav-left .logo {
@@ -245,12 +253,12 @@ small {
 }
 
 .site-nav-link {
-  color: #959595;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .site-nav-link-active {
-  color: #2A2A2A;
+  color: #FF6600;
   text-decoration: none;
 }
 
@@ -319,7 +327,7 @@ small {
 }
 
 .alert-error {
-  background-color: #CCCCCC;
+  background-color: #FC472E;
 }
 
 .alert img {
@@ -354,11 +362,11 @@ small {
 }
 
 .button-primary {
-  background-color: #959595;
+  background-color: #00CF63;
 }
 
 .button-secondary {
-  background-color: #2A2A2A;
+  background-color: #FFAA00;
 }
 
 .button-full {
@@ -427,7 +435,7 @@ input:active,
 input:focus,
 textarea:active,
 textarea:focus {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #42A5F5;
   outline: none;
 }
 
@@ -436,18 +444,18 @@ textarea {
 }
 
 .input-error {
-  border-color: #F2F3F5;
+  border-color: #FC472E;
 }
 
 /* 6. Page Styles
 ======================================== */
 .site-main {
-  padding: 0 15px;
+  padding: 60px 15px;
   position: relative;
 }
 
 .site-main-background {
-  background-color: #EBEBEB;
+  background-color: #34474F;
   height: 600px;
   display: block;
   position: absolute;
@@ -459,12 +467,12 @@ textarea {
 }
 
 .site-main-header {
-  margin-bottom: 0;
+  margin-bottom: 60px;
 }
 
 .site-main-header h1,
 .site-main-header p {
-  color: #2A2A2A;
+  color: #FFFFFF;
 }
 
 .section-header {
@@ -475,5 +483,5 @@ textarea {
 
 .location-details li {
   display: block;
-  margin-top: 0;
+  margin-top: 15px;
 }
