@@ -47,3 +47,15 @@ Use colors that fit the context and emotion you are trying to display to users
 Use contrast to enhance the legibility of elements on the page
 Use shades and tints of a color to create flexibility
 Avoid combinations that can cause issues for users
+
+
+
+## Color For UI Review
+
+Remember, the keys to designing for UI:
+- Select a dominant brand color and supporting accent colors
+- Use contrast to define sections and differentiate actions
+- Use semantic colors for error and success messages
+- Incorporate default colors for text and backgrounds where needed
+- Neutral colors can provide good contrast
+- Keep users in mind when selecting color
