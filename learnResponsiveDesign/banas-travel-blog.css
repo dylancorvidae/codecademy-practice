@@ -29,7 +29,7 @@ p {
   height: 46rem;
   background-image: url('camel-background.png');
   background-position: center;
-  
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
