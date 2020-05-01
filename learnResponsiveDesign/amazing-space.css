@@ -9,7 +9,7 @@ body {
 }
 
 body {
-  background-image: url("./img/space.jpg");
+  background-image: url("../img/space.jpg");
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -30,7 +30,7 @@ body {
 .logo {
   height: 80px;
   width: 80px;
-  background-image: url("./img/spaceship.png");
+  background-image: url("../img/spaceship.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -112,4 +112,10 @@ nav a {
 .contact-btn a:active {
   position: relative;
   bottom: 2px;
+}
+
+@media only screen and (max-width: 480px) {
+  .page-title {
+    width: 270px;
+  }
 }
