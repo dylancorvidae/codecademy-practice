@@ -95,3 +95,19 @@ In the example above, when the browser is resized, the width of paragraph elemen
 When a browser window is narrowed or widened, text can become either very compressed or very spread out, making it difficult to read. These two properties ensure that content is legible by limiting the minimum and maximum widths.
 
 Note: The unit of pixels is used to ensure hard limits on the dimensions of the element(s).
+
+
+## Height: Minimum & Maximum
+You can also limit the minimum and maximum height of an element.
+
+1. min-height — ensures a minimum height for an element’s box.
+2. max-height — ensures a maximum height for an element’s box.
+```
+p {
+  min-height: 150px;
+  max-height: 300px;
+}
+```
+In the example above, the height of all paragraphs will not shrink below 150 pixels and the height will not exceed 300 pixels.
+
+What will happen to the contents of an element if the max-height property is set too low for that element? It’s possible that content will overflow outside of the element, resulting in content that is not legible.
