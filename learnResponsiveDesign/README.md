@@ -60,3 +60,22 @@ When percentages are used, elements are sized relative to the dimensions of thei
 Note: Because the box model includes padding, borders, and margins, setting an element’s width to 100% may cause content to overflow its parent container. While tempting, 100% should only be used when content will not have padding, border, or margin.
 
 
+## Percentages: Padding & Margin
+Percentages can also be used to set the padding and margin of elements.
+
+When height and width are set using percentages, you learned that the dimensions of child elements are calculated based on the dimensions of the parent element.
+
+When percentages are used to set padding and margin, however, they are calculated based only on the width of the parent element.
+
+For example, when a property like margin-left is set using a percentage (say 50%), the element will be moved halfway to the right in the parent container (as opposed to the child element receiving a margin half of its parent’s margin).
+
+Vertical padding and margin are also calculated based on the width of the parent. Why? Consider the following scenario:
+
+A container div is defined, but its height is not set (meaning it’s flat).
+The container then has a child element added within. The child element does have a set height. This causes the height of its parent container to stretch to that height.
+The child element requires a change, and its height is modified. This causes the parent container’s height to also stretch to the new height. This cycle occurs endlessly whenever the child element’s height is changed!
+In the scenario above, an unset height (the parent’s) results in a constantly changing height due to changes to the child element. This is why vertical padding and margin are based on the width of the parent, and not the height.
+
+Note: When using relative sizing, ems and rems should be used to size text and dimensions on the page related to text size (i.e. padding around text). This creates a consistent layout based on text size. Otherwise, percentages should be used.
+
+
