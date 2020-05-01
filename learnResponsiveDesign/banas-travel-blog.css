@@ -40,7 +40,7 @@ body {
 /* Blog Post */
 
 #blog {
-  
+  width: 86%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ body {
 }
 
 #blog .post {
-  
+  width: 52%;
   
 
   display: flex;
@@ -80,7 +80,7 @@ body {
 }
 
 .post .image-container {
-  
+  width: 100%;
 }
 
 /* Blog Images */
@@ -91,7 +91,7 @@ body {
 
 .images .image-container {
   display: inline-block;
-  
+  width: 50%;
 }
 
 /* Footer */
