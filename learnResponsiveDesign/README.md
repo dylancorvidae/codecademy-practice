@@ -241,3 +241,42 @@ For example:
 By placing the and operator between the two media features, the browser will require both media features to be true before it renders the CSS within the media query. The and operator can be used to chain as many media features as necessary.
 
 
+## Comma Separated List
+If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list.
+
+For example, if we needed to apply a style when only one of the below is true:
+- The screen is more than 480 pixels wide
+- The screen is in landscape mode
+
+We could write:
+```
+@media only screen and (min-width: 480px), (orientation: landscape) {
+    /* CSS ruleset */
+}
+```
+In the example above, we used a comma (,) to separate multiple rules. The example above requires only one of the media features to be true for its CSS to apply.
+
+Note that the second media feature is orientation. The orientation media feature detects if the page has more width than height. If a page is wider, it’s considered landscape, and if a page is taller, it’s considered portrait.
+
+
+## Breakpoints
+We know how to use media queries to apply CSS rules based on screen size and resolution, but how do we determine what queries to set?
+
+The points at which media queries are set are called breakpoints. Breakpoints are the screen sizes at which your web page does not appear properly. For example, if we want to target tablets that are in landscape orientation, we can create the following breakpoint:
+```
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS ruleset */
+}
+```
+
+The example above creates a screen size range the size of a tablet in landscape mode and also identifies the orientation.
+
+However, setting breakpoints for every device imaginable would be incredibly difficult because there are many devices of differing shapes and sizes. In addition, new devices are released with new screen sizes every year.
+
+Rather than set breakpoints based on specific devices, the best practice is to resize your browser to view where the website naturally breaks based on its content. The dimensions at which the layout breaks or looks odd become your media query breakpoints. Within those breakpoints, we can adjust the CSS to make the page resize and reorganize.
+
+By observing the dimensions at which a website naturally breaks, you can set media query breakpoints that create the best possible user experience on a project by project basis, rather than forcing every project to fit a certain screen size. Different projects have different needs, and creating a responsive design should be no different.
+
+Look up a list of breakpoints by device widths. Use it as a reference of screen widths to test your website to make certain it looks great across a variety of devices.
+
+
