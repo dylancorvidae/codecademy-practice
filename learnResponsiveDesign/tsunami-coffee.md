@@ -14,6 +14,7 @@ The website needs a background image in the main section at the top of the page.
 Navigate to style.css and add the following image to the .main class as a cover-sized background image:
 
 https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png
+
 2. The navigation items at the top of the page need more padding.
 
 Add a padding of 0.75rem to the top and bottom, and 1.25rem to the left and right of the navigation’’s list items.

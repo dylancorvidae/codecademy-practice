@@ -12,6 +12,10 @@ body {
 }
 
 .main {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 30rem;
   padding-top: 1rem;
 }
@@ -35,6 +39,7 @@ ul {
 
 li {
   display: inline-block;
+  padding: 0.75rem 1.25rem;
 }
 
 .supporting,
@@ -51,7 +56,9 @@ li {
 }
 
 .supporting img {
-
+  width: 10%;
+  height: 10%;
+  margin-right: 5%;
 }
 
 .rating {
@@ -65,7 +72,7 @@ li {
 }
 
 .rating h1 {
-
+  font-size: 2.5rem;
 }
 
 .gallery img {
@@ -85,7 +92,7 @@ li {
 }
 
 .location img {
-
+  width: 100%;
 }
 
 footer {
@@ -99,4 +106,31 @@ footer .container {
   justify-content: space-between;
   padding: 5em 0;
   color: white;
+}
+
+@media only screen and (max-width: 960px) {
+  .main {
+    padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .supporting img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .rating h1 {
+    font-size: 2rem;
+  }
+
+  .gallery img {
+    width: 100%;
+    margin: 0px;
+  }
+
+  footer nav {
+    display: none;
+  }
 }
