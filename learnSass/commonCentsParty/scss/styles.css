@@ -1,12 +1,7 @@
-//Add variables here:
-$white: #FFFFFF;
-$rose: #FFCFCF;
-
-
-html, body {
+html body {
   margin: 0;
   font-family: Arial;
-  color: $white;
+  color: #FFFFFF;
 }
 
 p, a {
@@ -19,17 +14,14 @@ img {
   width: 550px;
 }
 
-ul {
-  list-style: none;
-}
-
 .container {
   min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
 }
 
-.nav {
+.container .nav {
   width: 15%;
   min-width: 140px;
   color: #FFCFCF;
@@ -38,49 +30,47 @@ ul {
   text-align: center;
 }
 
-.nav h4 {
+.container .nav ul {
+  list-style: none;
+}
+
+.container .nav h4 {
   -webkit-margin-before: 0;
   margin-left: 50px;
 }
 
-.main ul {
-  padding-left: 30px;
-}
-
-.main li {
-  font-size: 0.85rem;
-}
-
-.main {
+.container .main {
   width: 85%;
   min-height: 750px;
   min-width: 600px;
   background-color: #FFCFCF;
 }
 
-.main h1 {
+.container .main > {
+  padding-left: 30px;
+}
+
+.container .main ul li {
+  font-size: 0.85rem;
+}
+
+.container .main h1 {
   font-size: 62px;
   -webkit-margin-before: 0;
   padding-top: 40px;
-  padding-left: 30px;
 }
 
-.main video {
-  padding-left: 30px;
-}
-
-.main p {
-  padding-left: 30px;
+.container .main p {
   width: 55%;
   min-width: 550px;
 }
 
-.main a {
+.container .main a {
   color: inherit;
-  padding-left: 30px;
   text-decoration: none;
 }
 
-.main a:hover {
+.container .main a:hover {
   text-decoration: underline;
 }
+/*# sourceMappingURL=styles.css.map */

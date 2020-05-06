@@ -1,8 +1,24 @@
 {
+  "name": "codecademy-practice",
+  "description": "Practice projects from codecademy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch learnSass/commonCentsParty/scss/styles.scss -o learnSass/commonCentsParty/scss/styles.css"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylancorvidae/codecademy-practice.git"
+  },
+  "author": "Dylan Corvidae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylancorvidae/codecademy-practice/issues"
+  },
+  "homepage": "https://github.com/dylancorvidae/codecademy-practice#readme",
   "dependencies": {
     "node-sass": "^4.14.1"
-  },
-  "scripts": {
-    "scss": "node-sass --watch scss -o css"
-    }
+  }
 }
