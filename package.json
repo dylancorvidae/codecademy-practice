@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch learnSass/commonCentsParty/scss/styles.scss -o learnSass/commonCentsParty/scss/styles.css"
+    "scss": "sass --watch learnSass/commonCentsParty/scss:learnSass/commonCentsParty/css"
   },
   "devDependencies": {},
   "repository": {
@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/dylancorvidae/codecademy-practice#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
+    "sass": "^1.26.5"
   }
 }
