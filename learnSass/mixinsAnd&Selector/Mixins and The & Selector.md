@@ -27,4 +27,87 @@ will compile to the following CSS:
 ```
 
 
+## What is a Mixin?
+In addition to variables and nesting, Sass has multiple constructs that reduce repetition.
+
+In Sass, a mixin lets you make groups of CSS declarations that you want to reuse throughout your site.
+
+The notation for creating a mixin is as follows:
+```
+@mixin backface-visibility {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+```
+Note: Mixin names and all other Sass identifiers use hyphens and underscores interchangeably. The following code:
+```
+.notecard {
+.front, .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    @include backface-visibility;
+  }
+}  
+```
+is equivalent to the following CSS:
+```
+.notecard .front, .notecard .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; 
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+```
+
+
+## Mixins: Arguments
+Mixins also have the ability to take in a value.
+
+An argument, or parameter, is a value passed to the mixin that will be used inside the mixin, such as $visibility in this example:
+```
+@mixin backface-visibility($visibility) {
+  backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -ms-backface-visibility: $visibility;
+  -o-backface-visibility: $visibility;
+}
+```
+In fact, you should only ever use a mixin if it takes an argument. We will learn more about this in a later exercise.
+
+The syntax to pass in a value is as follows:
+```
+@include backface-visibility(hidden);
+```
+In the code above, hidden is passed in to the backface-visibility mixin, where it will be assigned as the value of its argument, $visibility.
+
+
+## Default Value Arguments
+Mixin arguments can be assigned a default value in the mixin definition by using a special notation.
+
+A default value is assigned to the argument if no value is passed in when the mixin is included. Defining a default value for each argument is optional.
+
+The notation is as follows:
+```
+@mixin backface-visibility($visibility: hidden) {
+   backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -ms-backface-visibility: $visibility;
+  -o-backface-visibility: $visibility;
+}
+```
+In the example above, if no value is passed in when backface-visibility is included, hidden would be assigned to all properties.
+
+
 ## 
