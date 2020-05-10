@@ -21,6 +21,14 @@
 }
 
 //Add your own mixins here
+@mixin backface-visibility($visibility: hidden) { //Add an argument
+  backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -ms-backface-visibility: $visibility;
+  -o-backface-visibility: $visibility;
+}
+
 
 .notecard {
   width: 300px;
@@ -30,11 +38,16 @@
   margin: 20px;
   font-family: Roboto, sans-serif;
   box-shadow: 1px 1px 2px 2px rgba(0,0,0,.2);
+
+  &:hover{
+  @include transform (rotatey(-180deg));  
+}
   
   .front, .back {
     width: 100%;
     height: 100%;
     position: absolute;
+    @include backface-visibility(hidden);
   }
   
   .front {
