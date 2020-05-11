@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #2e3738;
+}
+
+
+#landscape {
+}
+
+#monkeys {
+}
+
+#landscape,
+#monkeys {
+
+	h1{
+		text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    letter-spacing: 0.06em;
+    font-size: 120px;
+    color: #FFF;
+    opacity: 0.7;
+    text-align: center;
+	}
+}
+
+p {
+	width: 70%;
+	padding: 5%;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.4;
+}

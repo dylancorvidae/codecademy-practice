@@ -1,3 +1,5 @@
+$stripe-properties: to bottom, 15%, blue, white;
+
 @mixin stripes($direction, $width-percent, $stripe-color, $stripe-background: #FFF) {
   background: repeating-linear-gradient(
     $direction,
@@ -16,12 +18,13 @@
   -o-transform: $transformation;  
 }
 
-@mixin photo-content {
+@mixin photo-content($file) {
+  content: url(#{$file}.jpg); 
   object-fit: cover;
 }
 
 //Add your own mixins here
-@mixin backface-visibility($visibility: hidden) { //Add an argument
+@mixin backface-visibility($visibility:hidden) {
   backface-visibility: $visibility;
   -webkit-backface-visibility: $visibility;
   -moz-backface-visibility: $visibility;
@@ -29,6 +32,11 @@
   -o-backface-visibility: $visibility;
 }
 
+@mixin hover-color($color) {
+  &:hover{
+  color: $color;
+  }
+}
 
 .notecard {
   width: 300px;
@@ -38,16 +46,16 @@
   margin: 20px;
   font-family: Roboto, sans-serif;
   box-shadow: 1px 1px 2px 2px rgba(0,0,0,.2);
-
+  
   &:hover{
   @include transform (rotatey(-180deg));  
-}
+	}	
   
   .front, .back {
     width: 100%;
     height: 100%;
     position: absolute;
-    @include backface-visibility(hidden);
+    @include backface-visibility;
   }
   
   .front {
@@ -59,6 +67,7 @@
       text-align: center;
       position: relative;
       top: 40%;
+      @include hover-color(red);
     }    
   }
   
@@ -69,13 +78,13 @@
   line-height: 1.6;
     
     .definition {
+      @include stripes($stripe-properties...);      
       width: 100%;
       height: 100%;
-            
       .photo {
         width: 60%;
         margin: 0px auto;
-          
+        @include photo-content('titanosaur');
       }
     }
   }
