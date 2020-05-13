@@ -6,6 +6,30 @@ body {
   color: #2e3738;
 }
 
+#landscape {
+  height: 100vh;
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/sass/landscape.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#monkeys {
+  height: 100vh;
+  background: url("https://s3.amazonaws.com/codecademy-content/projects/sass/monkeys.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#landscape,
+#monkeys {
+  width: 100%;
+  height: 100vh;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-transform: translateZ(-1px);
+          transform: translateZ(-1px);
+}
+
 #landscape h1,
 #monkeys h1 {
   text-transform: uppercase;
@@ -15,6 +39,8 @@ body {
   color: #FFF;
   opacity: 0.7;
   text-align: center;
+  -webkit-transform: translateZ(-2px);
+          transform: translateZ(-2px);
 }
 
 p {
