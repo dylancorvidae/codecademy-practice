@@ -1,0 +1,24 @@
+$width: 250px;
+$lagoon-blue: fade-out(#62fdca, 0.5);
+
+.math {
+  width: $width;
+  text-align: center;
+  background-color: $lagoon-blue;
+  color: red + blue;
+}
+
+
+$list: (orange, purple, teal);
+
+//Add your each-loop here
+@each $item in $list {
+  .#{$item} {
+    background-color: $item;
+  }
+}
+
+
+.separator {
+  height: 200px;
+}
