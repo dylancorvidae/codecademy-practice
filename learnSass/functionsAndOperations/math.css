@@ -1,0 +1,23 @@
+.math {
+  width: 250px;
+  text-align: center;
+  background-color: rgba(98, 253, 202, 0.5);
+  color: magenta;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.separator {
+  height: 200px;
+}
+/*# sourceMappingURL=math.css.map */
